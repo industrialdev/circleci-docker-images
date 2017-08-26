@@ -1,0 +1,7 @@
+#!/bin/bash
+set -ex
+
+variant=$1
+tag=$2
+
+docker build --pull -t industrial/circleci-${variant}:${tag} -f ${variant}/${tag}/Dockerfile ${variant}/${tag}

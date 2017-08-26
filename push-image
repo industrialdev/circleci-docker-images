@@ -1,0 +1,7 @@
+#!/bin/bash
+set -ex
+
+variant=$1
+tag=$2
+
+docker push industrial/circleci-${variant}:${tag}
